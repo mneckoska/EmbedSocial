@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row p{
+    width: 300px;
+}
+.column
+{
+    flex:25%;
+   
+      
+}
+.column .insta
+{
+    text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+}
+  
+  
+@media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+}
+.btn
+{
+    margin:auto;
+    color:white;
+    background-color: #18a0fb;
+    padding: 10px;
+    border: #18a0fb;
+    
+}
+
