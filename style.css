@@ -5,19 +5,56 @@
 {
     display: flex;
     flex-wrap: wrap;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+   
+    
 }
 .row p{
     width: 300px;
 }
 .column
 {
-    flex:25%;
-   
-      
+    flex:25%; 
+    border :1px solid lightgray;
+    justify-content: space-between;
+        
 }
-.column .insta
+ .insta
 {
-    text-align: right;
+    
+    width:20px;
+    height: 20px;
+    margin-left:auto; 
+    margin-top: auto;
+}
+ .profile
+{
+   border-radius: 50%;   
+   width: 50px;
+   height: 50px;
+}
+.images p:nth-of-type(2)
+
+{
+    color: lightgrey;
+    display: block;
+}
+
+.images
+{
+    width: 300px;
+    /*height: 60px;*/
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.imageClass
+{
+    width:300px;
+    height: 200px;
 }
 
 @media screen and (max-width: 992px) {
@@ -42,3 +79,42 @@
     
 }
 
+/*novata skripta*/
+
+.name
+{
+    color:black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#row
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.caption
+{
+    width:300px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#615E5D;
+    border-bottom: 1px solid lightgray ;
+    padding-bottom: 10px;
+}
+.likes
+{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#615E5D;
+}
+.date
+{
+    color: lightgrey;    
+    text-align: left;
+   /* order:-1;
+    flex: -1 0 100%;*/
+
+    
+    
+}

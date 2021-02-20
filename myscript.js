@@ -1,19 +1,25 @@
-//import {data} from './data.js';
-
-function load()
+var pomArray = [];
+for(var i in data)
 {
-for(i=0;i<=4;i++)
-{
-   var element = document.createElement("p");
-   //element.setAttribute("text",data[0].name);
-   element.setAttribute("text","MAJA");
-   document.getElementById("hoho").appendChild(element);
-    
+  pomArray.push(data[i]);
 }
+console.log(pomArray);
 
 
+function loadMore()
+{
+for(var i=0;i<pomArray.length;i=i+4)
+{
+ 
 
-
+   var img = document.createElement("img");
+   img.setAttribute("src",pomArray[i].profile_image);
+   img.setAttribute("class","profile")
+   document.getElementById("hoho").appendChild(img);
+   var p = document.createElement("p");
+   p.setAttribute("text",pomArray[i].name);
+ 
+}
 }
 
 Object.size = function(obj) {
