@@ -1,52 +1,28 @@
 *{
     box-sizing: border-box;
 }
-.row
-{
-    display: flex;
-    flex-wrap: wrap;
-    border-collapse: separate;
-    border-spacing: 10px 10px;
-   
-    
-}
-.row p{
-    width: 300px;
-}
 .column
-{
-    flex:25%; 
+{ 
+    flex: 25%;
     border :1px solid lightgray;
-    justify-content: space-between;
-        
 }
  .insta
-{
-    
-    width:20px;
-    height: 20px;
-    margin-left:auto; 
-    margin-top: auto;
+ {  
+    width:24px;
+    height: 24px;
+    margin-top: 15px;
 }
- .profile
+.profile
 {
    border-radius: 50%;   
    width: 50px;
    height: 50px;
 }
-.images p:nth-of-type(2)
-
-{
-    color: lightgrey;
-    display: block;
-}
-
-.images
-{
+.header
+{    
     width: 300px;
-    /*height: 60px;*/
+    height: 18px;
     display: flex;
-    justify-content: space-evenly;
     font-weight: bold;
     color:black;
     font-family: Arial, Helvetica, sans-serif;  
@@ -65,29 +41,26 @@
   
   
 @media screen and (max-width: 768px) {
-    .row {
+    #row {
       flex-direction: column;
     }
 }
 .btn
 {
-    margin:auto;
     color:white;
     background-color: #18a0fb;
-    padding: 10px;
     border: #18a0fb;
-    
+    padding: 10px;
+    display: flex; 
+    margin:auto;       
 }
-
-/*novata skripta*/
-
 .name
 {
     color:black;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 4;
 }
-
 #row
 {
     display: flex;
@@ -101,6 +74,7 @@
     color:#615E5D;
     border-bottom: 1px solid lightgray ;
     padding-bottom: 10px;
+
 }
 .likes
 {
@@ -112,9 +86,47 @@
 {
     color: lightgrey;    
     text-align: left;
-   /* order:-1;
-    flex: -1 0 100%;*/
+    font-family: Arial, Helvetica, sans-serif;  
+    margin-left:50px;   
+}
+#modal
+{
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+        margin: auto;
+      
+}
+.modalClass
+{
+    display: flex;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;    
+    border-bottom: #fefefe;  
 
+}
+
+.captionModal
+{
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+    /*width: 300px;*/
     
-    
+}
+.captionModal div
+{
+  align-self: flex-start;
+  align-content: center;
+  flex: 0 0 80px;
 }
